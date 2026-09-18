@@ -1,26 +1,24 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
+	"id": "controllerinverty",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This mod aims to help new BTA modders.",
-	"authors": [
-		"Turnip Labs"
-	],
+	"name": "BTA Controller invert Y",
+	"description": "Adds an option to invert Y for controllers.",
+	"authors": ["WesOrangePower"],
 	"contact": {
 		"homepage": "",
 		"sources": ""
 	},
 	"icon": "icon.png",
 	"license": "CC0-1.0",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+			"eu.tooizi.controllerinverty.ControllerInvertY"
 		]
 	},
 	"mixins": [
-		"examplemod.mixins.json"
+		"controllerinverty.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",
